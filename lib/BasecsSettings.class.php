@@ -140,7 +140,7 @@ class BasecsSettings
     if(!self::$cache)
     {
       $cache_settings = sfConfig::get('app_csSettingsPlugin_cache', array(
-        'class'   => 'sfNoCache',
+        'class'   => 'csStaticCache',
         'options' => array()
       ));
       
